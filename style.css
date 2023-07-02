@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: Rubik, sans-serif;
+    text-align: center;
+    background-color: #45badd;
+}
+
+h1 {
+    width: 100vh;
+    border: 6px solid black;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    height: 80vh;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: url('robot.gif');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    width: 200px;
+    height: 50px;
+    font-family: Rubik, sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: #ff3482;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.6);
+}
+
+button:hover {
+    filter: brightness(95%);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:disabled {
+    cursor: default;
+    filter: brightness(30%);
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        background-size: cover;
+        background-position: center center;
+    }
+
+    h1 {
+        width: 50vh;
+    }
+
+}
